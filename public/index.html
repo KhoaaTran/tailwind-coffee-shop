@@ -4,6 +4,11 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            href="./img/favicon/logo-trungquandev-transparent-bg-256x256-ico.ico"
+            sizes="16x16"
+        />
         <link href="./output.css" type="text/css" rel="stylesheet" />
         <script src="./script.js" defer></script>
         <title>Document</title>
@@ -11,17 +16,18 @@
     <body>
         <div id="root">
             <div
-                class="content-wrapper max-w-screen-xl text-base mx-auto px-8 bg-slate-400"
+                class="content-wrapper font-Karla max-w-screen-xl text-base mx-auto px-8 bg-slate-200"
             >
-                <header class="py-6 mx-10">
-                    <nav class="flex items-center">
+                <header class="p-6 mx-auto">
+                    <nav class="flex items-center relative">
                         <div
                             class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer"
                         >
                             CoffeeStyle.
                         </div>
                         <ul
-                            class="flex basis-3/6 uppercase justify-end gap-8 text-sm items-center text-gray-500 font-medium"
+                            id="cf-top-menu"
+                            class="hidden lg:flex basis-3/6 uppercase lg:justify-end lg:gap-8 text-sm lg:items-center text-gray-500 font-medium"
                         >
                             <li class="cf-top-menu-item">
                                 <a href="#!">HOME</a>
@@ -43,7 +49,7 @@
                             </li>
                         </ul>
                         <ul
-                            class="basis-1/6 flex justify-start ml-16 uppercase text-sm text-gray-500 font-medium"
+                            class="basis-3/6 lg:basis-1 flex justify-end lg:justify-start ml-16 uppercase text-sm text-gray-500 font-medium"
                         >
                             <li class="cf-top-menu-item">
                                 <a href="#!" class="cart flex items-center">
@@ -63,11 +69,33 @@
                                     </svg>
 
                                     <span class="mx-2">cart</span>
-                                    <span class="cf-badge-circle bg-orange-400 text-white">0</span>
-                                    </a
-                                >
+                                    <span
+                                        class="cf-badge-circle bg-orange-400 text-white"
+                                        >0</span
+                                    >
+                                </a>
                             </li>
                         </ul>
+
+                        <div
+                            class="basis-1/6 flex items-center cursor-pointer px-2 sm:px-4 lg:hidden"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="cf-icon"
+                                id="cf-toggle-top-menu-icon"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                                />
+                            </svg>
+                        </div>
                     </nav>
                 </header>
                 <main>
